@@ -18,4 +18,17 @@ public final class Constants {
     public static final double LEFT_Y_DEADBAND = 0;
     public static final double LEFT_X_DEADBAND = 0;
   }
+  public static class IntakeConstants {
+
+    public static final double vkP = 2;
+    public static final double pkP = 0.1;
+    public static final double kInVel = 0;
+    public static int kID = 5;
+    public static int kDIO = 0;  
+  }
+
+  public static class  ForkConstants {
+  
+    
+  }
 }
