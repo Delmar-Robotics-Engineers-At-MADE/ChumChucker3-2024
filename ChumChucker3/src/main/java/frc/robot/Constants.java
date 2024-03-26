@@ -28,7 +28,16 @@ public final class Constants {
   }
 
   public static class  ForkConstants {
+
+    public static final int kID = 0;
+    public static final int kDIO = 1;
   
-    
+    public static final double kP = 5.0;
+    public static final double kI = 0.0;
+    public static final double kD = 0.0;
+    public static final double kFF = 0.0;
+    public static final double kUpperLim = 0;
+    public static final double kLowerLim = 0;
+    public static final double kNudgeCount = 0;
   }
 }
