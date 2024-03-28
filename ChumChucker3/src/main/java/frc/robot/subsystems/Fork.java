@@ -21,7 +21,7 @@ public class Fork extends SubsystemBase {
   private final SparkPIDController pid;
   private final DigitalInput lim;
   private boolean homed;
-  private boolean overrun;
+  
   public Fork() {
     motor = new CANSparkMax(ForkConstants.kID, MotorType.kBrushless);
     lim = new DigitalInput(ForkConstants.kDIO);
@@ -81,12 +81,6 @@ public class Fork extends SubsystemBase {
     if(isAtLimit()) {
       encoder.setPosition(0);
       homed = true;
-    }
-    if(encoder.getPosition() > ForkConstants.kUpperLim || encoder.getPosition() < ForkConstants.kLowerLim) {
-      overrun = true;
-    }
-    else {
-      overrun = false;
     }
   }
 }
